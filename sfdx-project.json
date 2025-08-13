@@ -1,0 +1,19 @@
+{
+  "packageDirectories": [
+    {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "path": "force-app",
+      "default": true,
+      "package": "BulkUpleteManagedPackage",
+      "versionDescription": ""
+    }
+  ],
+  "name": "BulkUpleteManagedPackage",
+  "namespace": "BulkUpleteManagedPackage",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "63.0",
+  "packageAliases": {
+    "devhubpackage": "0HogL0000000FK1SAM"
+  }
+}

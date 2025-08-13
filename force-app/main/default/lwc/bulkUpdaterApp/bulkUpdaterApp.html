@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Bulk Record Updater">
+        <div class="slds-p-around_medium">
+            <c-object-picker onobjectselect={handleObjectSelect}></c-object-picker>
+            <template if:true={selectedObject}>
+                <c-filter-builder
+                    object-api-name={selectedObject}
+                    onfilterapply={handleFilterApply}>
+                </c-filter-builder>
+                <c-record-table
+                    object-api-name={selectedObject}
+                    field-name={fieldName}
+                    filter-clause={filterClause}
+                    onrecordselect={handleRecordSelect}>
+                </c-record-table>
+                <c-field-updater
+                    object-api-name={selectedObject}
+                    record-ids={selectedRecordIds}>
+                </c-field-updater>
+            </template>
+        </div>
+    </lightning-card>
+</template>

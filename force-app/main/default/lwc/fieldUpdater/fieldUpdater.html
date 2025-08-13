@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Field Updater">
+        <div class="slds-p-around_medium">
+            <lightning-input label="Field Name" onchange={handleFieldChange}></lightning-input>
+            <lightning-input label="New Value" onchange={handleValueChange}></lightning-input>
+            <lightning-button label="Update Selected Records" variant="success" onclick={update}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

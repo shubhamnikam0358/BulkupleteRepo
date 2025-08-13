@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Records">
+        <lightning-datatable
+            key-field="Id"
+            data={records}
+            columns={columns}
+            onrowselection={handleRowSelection}>
+        </lightning-datatable>
+        <lightning-button label="Delete Selected Records" variant="destructive" onclick={handleDelete}></lightning-button>
+    </lightning-card>
+</template>
